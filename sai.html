@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cleaning Service Request</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body class="text-white">
+        <section class="flex flex-col gap-9 border-2 bg-blue-600 w-1/2 m-auto rounded-2xl shadow-blue-500 shadow-xl/30">
+            <header class="text-center text-2xl">
+                <h1>🧹 Cleaning Service Request</h1>
+    
+                <div class="receiver">
+                    Requests are sent to:<br>
+                    <strong>yourbuilder@gmail.com</strong><br>
+                    📞 +91XXXXXXXXXX
+                </div>
+            </header>
+    
+            <section>
+                <form id="contact-Form" class="flex flex-col justify-center items-center gap-3">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required class="w-4/5 border-2 p-2 rounded-xl border-white">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required class="w-4/5 border-2 p-2 rounded-xl border-white">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="Address / Location" required class="w-4/5 border-2 p-2 rounded-xl border-white">
+    
+                    <select id="service" required class="w-4/5 border-2 p-2 rounded-xl border-white">
+                        <option value="" class="bg-amber-400">Select Service</option>
+                        <option class="bg-amber-400">Cleaning</option>
+                        <option class="bg-amber-400">Deep Cleaning</option>
+                        <option class="bg-amber-400">Housekeeping</option>
+                        <option class="bg-amber-400">Maintenance</option>
+                    </select>
+    
+                    <textarea id="description" rows="5" placeholder="Describe your request" required class="w-4/5 border-2 p-2 rounded-xl border-white"></textarea>
+    
+                    <button type="submit" id="btn" class="bg-amber-300 border-2 w-3/5 h-12 rounded-xl hover:scale-115 duration-300 border-white">
+                        Submit Request
+                    </button>
+                </form>
+            </section>
+    
+            <footer>
+                <div id="message"></div>
+            </footer>
+        </section>
+        
+        <script src="sai.js">
+        </script>
+    </body>
+</html>
